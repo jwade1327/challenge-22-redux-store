@@ -8,10 +8,13 @@ import { UPDATE_PRODUCTS } from '../../utils/actions';
 import ProductItem from "../ProductItem";
 import { QUERY_PRODUCTS } from "../../utils/queries";
 import spinner from "../../assets/spinner.gif"
+import store from '../../utils/store';
 
 function ProductList() {
   const dispatch = useDispatch();
-  const state = useSelector(state => state);
+  const state = store.getState();
+  useSelector(state => state);
+  // const state = useSelector(state => state);
   const { currentCategory } = state;
 
   const { loading, data } = useQuery(QUERY_PRODUCTS);
