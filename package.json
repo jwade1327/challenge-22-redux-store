@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "if-env": "^1.0.4",
+    "mongodb": "^3.6.3",
     "stripe": "^8.120.0"
   },
   "devDependencies": {
